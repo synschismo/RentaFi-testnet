@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: radial-gradient(32.37% 32.37% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(112.7deg, rgba(162, 207, 255, 0.1) 9.49%, rgba(255, 176, 216, 0.1) 89.83%),
+    #ffffff;
+  background-blend-mode: hard-light, normal, normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.a-external {
+  color: #ed4b9e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.withdraw-button-bg {
+  background: #ed4b9e;
+}
+
+.claim-button-bg {
+  background: #8347e4;
+}
+
+.cancel-button-bg {
+  background: #8e8e8e;
+}
+
+.button-bg {
+  background-color: #ed4b9e;
+  border-color: #ffb2da;
+}
+
+.button-re-bg {
+  background-color: #ff88c5;
+  border-color: #ed4b9e;
+}
+
+.loading-bg {
+  border-color: #ed4b9e;
+  border-top-color: transparent;
+}
+
+.bg-theme-100 {
+  background-color: #ed4b9e;
+}
+
+.icon-size {
+  font-size: 16px;
+}
+
+.icon-size-big {
+  font-size: 24px;
+}
+
+.text-theme-100 {
+  color: #463a3f;
+}

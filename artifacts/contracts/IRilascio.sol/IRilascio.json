@@ -1,0 +1,363 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IRilascio",
+  "sourceName": "contracts/IRilascio.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_lockId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getClaimAvailability",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "original_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCurrentLocks",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_wrappedAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCurrentRents",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_lockId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getLockConditions",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "toLockNftId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockStartDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockDuration",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxRentalDuration",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "dailyRentalPrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "toLockNftContract",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "lenderAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "paymentTokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "is1155",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IRilascio.Lock",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_lockId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getLockIdToAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_lockId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getLockIdToRentIds",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "paymentTokenAddress_",
+          "type": "address"
+        }
+      ],
+      "name": "getPaymentToken",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_rentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRentConditions",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "rentalStartTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "rentalEndTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "borrowerAddress",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IRilascio.Rent",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_rentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRentIdToLockId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_lockId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRentalAvailability",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "original_",
+          "type": "address"
+        }
+      ],
+      "name": "getRilascioW",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalLockVolume",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalRentVolume",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_lockId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getWithdrawAvailability",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_lockId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getWrappedOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

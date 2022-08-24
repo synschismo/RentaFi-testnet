@@ -1,0 +1,16 @@
+[
+  {
+    "cName": "RentaFi Trial NFT",
+    "cAddr": "0xD55F1a95aa26520d3f3adE290Fa5281769496Ed4",
+    "cDire": "rentafi",
+    "cTop": "banner4.png",
+    "cSamne": "col_samne.png"
+  },
+  {
+    "cName": "VeryRentalAnimals",
+    "cAddr": "0x49882b5Bc8565ede2D15ce7Ba31b9519B9553CC2",
+    "cDire": "very-rental-animals",
+    "cTop": "banner4.png",
+    "cSamne": "col_samne.png"
+  }
+]

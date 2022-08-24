@@ -1,0 +1,60 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IRilascioAdmin",
+  "sourceName": "contracts/IRilascioAdmin.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "paymentTokenAddress_",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_bool",
+          "type": "bool"
+        }
+      ],
+      "name": "PaymentTokenWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "original_",
+          "type": "address"
+        }
+      ],
+      "name": "deployRilascioW",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "original_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "wrapped_",
+          "type": "address"
+        }
+      ],
+      "name": "setRialscioWManual",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
